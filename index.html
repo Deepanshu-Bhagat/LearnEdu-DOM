@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn Edu</title>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/9083f04b5d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <nav class="nav">
+      <img class="nav-logo" src="img/logo.png" alt="logo" />
+      <ul class="nav-links">
+        <li class="nav-items"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-items">
+          <a class="nav-link" href="#features">Features</a>
+        </li>
+        <li class="nav-items">
+          <a class="nav-link" href="#testimonials">About us</a>
+        </li>
+        <li class="nav-items">
+          <a class="nav-link" href="#contact">Contact us</a>
+        </li>
+        <li class="nav-items">
+          <a class="nav-link open-modal" href="#"
+            ><img class="account-logo" src="img/account.png" alt="account-logo"
+          /></a>
+        </li>
+      </ul>
+    </nav>
+
+    <header id="home">
+      <img class="header-img" src="img/header-book.png" alt="header-img" />
+      <h3 class="main-heading">Learn and Grow with our Education Platform.</h3>
+      <h5 class="header-des">
+        Unlock your potential with our interactive online learning platform.
+      </h5>
+      <button class="btn sign-up-btn open-modal">Sign Up for Free</button>
+    </header>
+
+    <section class="section" id="features">
+      <h3 class="section-heading feature-sec-heading">Key Features</h3>
+      <div class="all-features">
+        <div class="feature feature-left">
+          <div class="feature-text">
+            <h5 class="feature-heading">Interactive Learning Materials</h5>
+            <p class="feature-des">
+              Engage with our immersive learning materials that make education
+              fun and interactive.
+            </p>
+          </div>
+          <img
+            class="feature-img"
+            src="img/learning-materials.png"
+            alt="learning-img"
+          />
+        </div>
+        <div class="feature feature-right">
+          <img class="feature-img" src="img/book.png" alt="book-img" />
+          <div class="feature-text feature-text-right">
+            <h5 class="feature-heading">Personalized Study Plans</h5>
+            <p class="feature-des">
+              Receive tailored study plans designed to meet your individual
+              learning needs and goals
+            </p>
+          </div>
+        </div>
+        <div class="feature feature-left">
+          <div class="feature-text">
+            <h5 class="feature-heading">Expert Instructors</h5>
+            <p class="feature-des">
+              Learn from our team of experienced instructors who are passionate
+              about guiding you towards success.
+            </p>
+          </div>
+          <img
+            class="feature-img"
+            src="img/instructor.png"
+            alt="instructor-img"
+          />
+        </div>
+      </div>
+    </section>
+    <section class="section section-testimonials" id="testimonials">
+      <h3 class="section-heading">Testimonials</h3>
+      <div class="slider">
+        <div class="slide slide-1">
+          <div class="testimonial">
+            <p class="slide-text">
+              "Thanks to this platform, I was able to enhance my knowledge and
+              achieve academic excellence. Highly recommended!"
+            </p>
+            <h5 class="author">- John Doe, Student</h5>
+          </div>
+        </div>
+        <div class="slide slide-2">
+          <div class="testimonial">
+            <p class="slide-text">
+              "In my experience all the teachers are very supportive and
+              friendly and the placement process has been very smooth
+              throughout!"
+            </p>
+            <h5 class="author">- Vishal, Student</h5>
+          </div>
+        </div>
+        <div class="slide slide-3">
+          <div class="testimonial">
+            <p class="slide-text">
+              "My experience at this platform is great and memorable. The
+              mentors helped us enhance my academic and interpersonal skills. I
+              am thankful to all instructors."
+            </p>
+            <h5 class="author">- Charanpreet, Student</h5>
+          </div>
+        </div>
+        <div class="dots"></div>
+      </div>
+    </section>
+    <footer class="contact-us" id="contact">
+      <input type="email" placeholder="Email" class="mail-input" />
+      <button class="btn contact-btn open-modal">Sign Up for Free</button>
+      <p class="footer-copyright">
+        &copy; Copyright: Design by
+        <a
+          href="https://www.linkedin.com/in/charanpreetsinghux/"
+          title="Charanpreet's Linkedin"
+          >Charanpreet</a
+        >
+        and Developed by
+        <a
+          href="https://www.linkedin.com/in/deepanshu-bhagat-691a911b6/"
+          title="Deepanshu's Linkedin"
+          >Deepanshu</a
+        >. Don't claim as your own product.
+      </p>
+    </footer>
+
+    <div class="modal hidden">
+      <button class="close-modal-btn">X</button>
+      <div>
+        <h3 class="modal-heading">SignUp Now</h3>
+      </div>
+      <div class="signup-modal">
+        <form class="modal-form">
+          <label>Name</label>
+          <input type="text" />
+          <label>Email</label>
+          <input type="email" />
+          <label>Password</label>
+          <input type="password" />
+          <button class="btn form-submit">Let's Go &rarr;</button>
+        </form>
+      </div>
+    </div>
+    <div class="overlay hidden"></div>
+  </body>
+</html>
